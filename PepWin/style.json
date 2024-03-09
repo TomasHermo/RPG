@@ -1,0 +1,25 @@
+{
+	"QDialog":[
+		{
+			"tittle":"Pep",
+			"icon":":/icons/icons/atoms-white.svg",
+			"frameless": true,
+			"transluscentBg": false,
+			"navigation":[
+				{
+					"minimize":"minimizeButton",
+					"close": "xButton",
+					"restore":[
+						{
+							"buttonName": "squareButton",
+							"normalIcon": ":/icons/icons/square.svg",
+							"maximizedIcon": ":/icons/icons/maximize.svg"
+						}
+					],
+					"moveWindow": "widget",
+					"tittleBar": "widget"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>302</width>
+    <height>339</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>302</width>
+    <height>339</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>RPG_Peptide-Selection</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+border: 2px solid rgb(120, 120, 120);
+}
+
+*{
+background-color: rgb(40,40, 32);
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item alignment="Qt::AlignTop">
+    <widget class="QWidget" name="tab" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-bottom: 2px solid rgb(120, 120, 120);</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">border: none;
+font: 8pt &quot;Eight Bit Dragon&quot;;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#eeeeec;&quot;&gt;AutoDock Vina Parameters&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignHCenter">
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">*{
+
+color: rgb(238, 238, 236);
+font: 12pt &quot;Eight Bit Dragon&quot;;
+border: None;
+border-color: rgb(100, 100, 100);
+}
+QSpinBox{
+
+	border : 1px solid grey;
+	height: 30;
+width:55px;
+}
+QSpinBox::up-button {
+	width:25px;
+
+
+	
+}
+QSpinBox::down-button {
+	width:25px;
+
+}
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="0">
+       <widget class="QLabel" name="center_label_6">
+        <property name="text">
+         <string>Center Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="centerx_box_3">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>-1000</number>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="center_label">
+        <property name="text">
+         <string>Center X</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="center_label_3">
+        <property name="text">
+         <string>Size X</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QSpinBox" name="centery_box_2">
+        <property name="maximumSize">
+         <size>
+          <width>5353535</width>
+          <height>335535</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>-1000</number>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="centerx_box">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16000000</width>
+          <height>16000000</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Eight Bit Dragon</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="minimum">
+         <number>-1000</number>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Exhaustiveness </string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QSpinBox" name="Exhaustivness_box">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maximum">
+         <number>200</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+        <property name="displayIntegerBase">
+         <number>10</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="sizeX_box">
+        <property name="maximumSize">
+         <size>
+          <width>53533</width>
+          <height>53535</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>-1000</number>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+        <property name="value">
+         <number>60</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="center_label_4">
+        <property name="text">
+         <string>Size Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QSpinBox" name="sizey_box">
+        <property name="maximumSize">
+         <size>
+          <width>535353</width>
+          <height>33535</height>
+         </size>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+        <property name="value">
+         <number>60</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="center_label_2">
+        <property name="text">
+         <string>Center Y</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="center_label_5">
+        <property name="text">
+         <string>Size Z</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QSpinBox" name="sizeZ_box">
+        <property name="maximumSize">
+         <size>
+          <width>5656565</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+        <property name="value">
+         <number>60</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="saveButton">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 10pt &quot;Eight Bit Dragon&quot;;
+color: rgb(255, 255, 255);
+border: 2px solid black;
+background-color: rgb(40,40, 32);
+border-color: rgb(100, 100, 100);
+border-radius: 12px;
+}
+QPushButton:hover{
+color: rgb(255, 255, 255);
+border: 1px solid;
+background-color: rgb(80, 80, 80);
+border-color: rgb(64, 64, 64);
+border-radius: 12px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="resetButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+font: 10pt &quot;Eight Bit Dragon&quot;;
+color: rgb(255, 255, 255);
+border: 2px solid black;
+background-color: rgb(40,40, 32);
+border-color: rgb(100, 100, 100);
+border-radius: 12px;
+}
+QPushButton:hover{
+color: rgb(255, 255, 255);
+border: 1px solid;
+background-color: rgb(80, 80, 80);
+border-color: rgb(64, 64, 64);
+border-radius: 12px;
+}</string>
+       </property>
+       <property name="text">
+        <string>Reset</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
